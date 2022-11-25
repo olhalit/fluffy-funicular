@@ -6,6 +6,7 @@ import {
 } from 'react-native';
 
 import { Colors } from 'react-native/Libraries/NewAppScreen';
+import GradientButton from './src/components/GradientButton';
 import React from 'react';
 
 const App = () => {
@@ -21,6 +22,7 @@ const App = () => {
         barStyle={isDarkMode ? 'light-content' : 'dark-content'}
         backgroundColor={backgroundStyle.backgroundColor}
       />
+      <GradientButton />
     </SafeAreaView>
   );
 };
