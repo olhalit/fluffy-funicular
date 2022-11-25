@@ -2,6 +2,7 @@ import {
   SafeAreaView,
   StatusBar,
   StyleSheet,
+  Text,
   useColorScheme,
 } from 'react-native';
 
@@ -22,7 +23,8 @@ const App = () => {
         barStyle={isDarkMode ? 'light-content' : 'dark-content'}
         backgroundColor={backgroundStyle.backgroundColor}
       />
-      <GradientButton />
+      <Text style={styles.text}>Joined</Text>
+      <GradientButton additionalStyles={styles.button} />
     </SafeAreaView>
   );
 };
@@ -33,6 +35,15 @@ const styles = StyleSheet.create({
     height: '100%',
     justifyContent: 'center',
     alignItems: 'center',
+  },
+  text: {
+    marginTop: -10,
+    fontWeight: '600',
+    fontSize: 14,
+    color: '#473F4E',
+  },
+  button: {
+    position: 'absolute',
   },
 });
 
